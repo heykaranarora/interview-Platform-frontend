@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const logoutHandler = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/v1/user/logout", {
+      const res = await fetch("https://interview-platform-backend-xp3r.onrender.com/api/v1/user/logout", {
         method: "GET",
         credentials: "include",
       });

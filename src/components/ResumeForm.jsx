@@ -80,7 +80,7 @@ const ResumeForm = () => {
       const data = await response.json();
       if (response.ok) {
         toast.success("Resume generated successfully!");
-        setResumeUrl(`http://localhost:8000${data.filePath}`);
+        setResumeUrl(`https://interview-platform-backend-xp3r.onrender.com${data.filePath}`);
       } else {
         console.error("Failed to generate resume", data);
       }
