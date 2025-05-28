@@ -31,7 +31,7 @@ const LoginPage = () => {
     // Implement your login logic here
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:8000/api/v1/user/login", {
+      const res = await fetch("https://interview-platform-backend-xp3r.onrender.com/api/v1/user/login", {
         method: "POST",
         credentials: "include",
         headers: {
