@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 const HeroPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <Navbar />
       <main>
         {/* Hero Section */}
@@ -29,37 +29,37 @@ const HeroPage = () => {
             <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-10">Explore Our Platform</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <Link to="/forum" className="group">
-                <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-all hover:border-blue-300 dark:hover:border-blue-500 h-full flex flex-col items-center justify-center">
-                  <MessageSquare className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
+                <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-all hover:border-gray-300 dark:hover:border-gray-500 h-full flex flex-col items-center justify-center">
+                  <MessageSquare className="h-12 w-12 text-gray-600 dark:text-gray-400 mb-4" />
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Discussion Forum</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Connect with peers, share experiences, and learn from the community.
                   </p>
-                  <span className="text-blue-600 dark:text-blue-400 font-medium flex items-center group-hover:underline">
+                  <span className="text-gray-600 dark:text-gray-400 font-medium flex items-center group-hover:underline">
                     Join the conversation <ArrowRight className="ml-1 h-4 w-4" />
                   </span>
                 </div>
               </Link>
 
               <Link to="/record" className="group">
-                <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-all hover:border-blue-300 dark:hover:border-blue-500 h-full flex flex-col items-center justify-center">
-                  <Video className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
+                <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-all hover:border-gray-300 dark:hover:border-gray-500 h-full flex flex-col items-center justify-center">
+                  <Video className="h-12 w-12 text-gray-600 dark:text-gray-400 mb-4" />
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Live Interview Practice</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">Schedule real-time mock interviews with industry professionals.</p>
-                  <span className="text-blue-600 dark:text-blue-400 font-medium flex items-center group-hover:underline">
+                  <span className="text-gray-600 dark:text-gray-400 font-medium flex items-center group-hover:underline">
                     Practice now <ArrowRight className="ml-1 h-4 w-4" />
                   </span>
                 </div>
               </Link>
 
               <Link to="/mcq" className="group">
-                <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-all hover:border-blue-300 dark:hover:border-blue-500 h-full flex flex-col items-center justify-center">
-                  <Trophy className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
+                <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-all hover:border-gray-300 dark:hover:border-gray-500 h-full flex flex-col items-center justify-center">
+                  <Trophy className="h-12 w-12 text-gray-600 dark:text-gray-400 mb-4" />
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Earn Badges</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Complete challenges and showcase your interview skills with achievement badges.
                   </p>
-                  <span className="text-blue-600 dark:text-blue-400 font-medium flex items-center group-hover:underline">
+                  <span className="text-gray-600 dark:text-gray-400 font-medium flex items-center group-hover:underline">
                     Earn Badges <ArrowRight className="ml-1 h-4 w-4" />
                   </span>
                 </div>
@@ -73,17 +73,17 @@ const HeroPage = () => {
             <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Why Choose InterviewPro?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <FeatureCard
-                icon={<BookOpen className="h-12 w-12 text-blue-600 dark:text-blue-400" />}
+                icon={<BookOpen className="h-12 w-12 text-gray-600 dark:text-gray-400" />}
                 title="Comprehensive Resources"
                 description="Access a vast library of interview questions, answers, and tips across various industries."
               />
               <FeatureCard
-                icon={<Users className="h-12 w-12 text-blue-600 dark:text-blue-400" />}
+                icon={<Users className="h-12 w-12 text-gray-600 dark:text-gray-400" />}
                 title="Expert-Led Mock Interviews"
                 description="Practice with industry professionals and receive personalized feedback to improve your skills."
               />
               <FeatureCard
-                icon={<Calendar className="h-12 w-12 text-blue-600 dark:text-blue-400" />}
+                icon={<Calendar className="h-12 w-12 text-gray-600 dark:text-gray-400" />}
                 title="Flexible Scheduling"
                 description="Book mock interviews at your convenience, 24/7, from anywhere in the world."
               />
@@ -91,7 +91,7 @@ const HeroPage = () => {
           </div>
         </section>
 
-        <section className="bg-blue-50 dark:bg-gray-900 py-20">
+        <section className="bg-gray-50 dark:bg-gray-900 py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">What Our Users Say</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

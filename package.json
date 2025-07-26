@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
+    "clsx": "^2.1.1",
     "cra-template": "1.2.0",
     "lucide-react": "^0.474.0",
     "quill": "^2.0.3",
@@ -17,12 +18,12 @@
     "redux-persist": "^6.0.0"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "postinstall": "chmod +x ./node_modules/.bin/react-scripts"
-},
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "chmod +x ./node_modules/.bin/react-scripts"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
