@@ -49,7 +49,7 @@ const RegisterPage = () => {
     
         try {
             dispatch(setLoading(true));
-            const res = await fetch('https://interview-platform-backend-xp3r.onrender.com/api/v1/user/register', {
+            const res = await fetch('https://interview-platform-backend-xp3r.onrender.com', {
                 method: "POST",
                 credentials: "include",
                 headers: {

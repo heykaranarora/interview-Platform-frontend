@@ -56,7 +56,8 @@ const Profile = () => {
 
   const InterviewData = async () => {
     try {
-      const response = await fetch(`https://interview-platform-backend-xp3r.onrender.com/api/v1/interview/get`, {
+      const response = await fetch(`http://localhost:8000
+https://interview-platform-backend-xp3r.onrender.com/api/v1/interview/get`, {
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
@@ -173,7 +174,8 @@ const Profile = () => {
                     <div>
 
                     <a
-                      href={`https://interview-platform-backend-xp3r.onrender.com${profile.resume.filePath}`}
+                      href={`http://localhost:8000
+https://interview-platform-backend-xp3r.onrender.com${profile.resume.filePath}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center"

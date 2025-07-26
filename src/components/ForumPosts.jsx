@@ -44,7 +44,8 @@ const ForumPosts = () => {
     if (!commentText.trim()) return
 
     try {
-      const res = await fetch(`https://interview-platform-backend-xp3r.onrender.com/api/v1/forum/${postId}/comments`, {
+      const res = await fetch(`http://localhost:8000
+https://interview-platform-backend-xp3r.onrender.com/api/v1/forum/${postId}/comments`, {
         method: "POST",
         credentials: "include",
         headers: {

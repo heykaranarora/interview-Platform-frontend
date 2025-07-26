@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden text-purple-600 dark:text-purple-400"
+          className="lg:hidden text-gray-600 dark:text-gray-400"
         >
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -79,7 +79,7 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/profile" className="flex items-center text-purple-600 dark:text-purple-400 hover:underline">
+            <Link to="/profile" className="flex items-center text-gray-600 dark:text-gray-400 hover:underline">
               <User2 className="h-5 w-5 mr-1" />
               {user?.name}
             </Link>
@@ -97,31 +97,31 @@ const Navbar = () => {
         <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-800 shadow-md py-4">
           <ul className="flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-300 font-medium">
             <li>
-              <Link to="/" className="hover:text-purple-600 dark:hover:text-purple-400">Home</Link>
+              <Link to="/" className="hover:text-gray-600 dark:hover:text-gray-400">Home</Link>
             </li>
             <li>
-              <Link to="/test" className="hover:text-purple-600 dark:hover:text-purple-400">Test</Link>
+              <Link to="/test" className="hover:text-gray-600 dark:hover:text-gray-400">Test</Link>
             </li>
             <li>
-              <Link to="/scorecards" className="hover:text-purple-600 dark:hover:text-purple-400">scorecards</Link>
+              <Link to="/scorecards" className="hover:text-gray-600 dark:hover:text-gray-400">scorecards</Link>
             </li>
           </ul>
           {!user ? (
             <div className="flex flex-col items-center space-y-4 mt-4">
               <Link to="/login">
-                <button className="border border-purple-600 dark:border-purple-400 text-purple-600 dark:text-purple-400 px-4 py-2 rounded-md hover:bg-purple-100 dark:hover:bg-purple-900">
+                <button className="border border-gray-600 dark:border-gray-400 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-900">
                   Login
                 </button>
               </Link>
               <Link to="/register">
-                <button className="bg-purple-600 dark:bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-700 dark:hover:bg-purple-600">
+                <button className="bg-gray-600 dark:bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-700 dark:hover:bg-gray-600">
                   Sign Up
                 </button>
               </Link>
             </div>
           ) : (
             <div className="flex flex-col items-center space-y-4 mt-4">
-              <Link to="/profile" className="flex items-center text-purple-600 dark:text-purple-400 hover:underline">
+              <Link to="/profile" className="flex items-center text-gray-600 dark:text-gray-400 hover:underline">
                 <User2 className="h-5 w-5 mr-1" />
                 Profile
               </Link>
